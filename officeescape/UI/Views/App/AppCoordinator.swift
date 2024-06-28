@@ -12,6 +12,7 @@ enum BottomTab: String {
     case homepage
     case profile
     case AI
+    case map
 }
 
 final class AppCoordinator: ViewModel {
@@ -22,6 +23,7 @@ final class AppCoordinator: ViewModel {
     @Published var eventCoordinator: EventCoordinator
     @Published var profileViewModel: ProfileViewModel
     @Published var intelligentViewModel: IntelligentViewModel
+    @Published var mapViewModel: MapViewModel
     @Published var currentTab: BottomTab = .homepage
 
     init(resolver: Resolver) {
@@ -30,6 +32,7 @@ final class AppCoordinator: ViewModel {
         self.eventCoordinator = resolver.resolve(EventCoordinator.self)!
         self.profileViewModel = resolver.resolve(ProfileViewModel.self)!
         self.intelligentViewModel = resolver.resolve(IntelligentViewModel.self)!
+        self.mapViewModel = resolver.resolve(MapViewModel.self)!
     }
     
     func tappedTab(oldTab: BottomTab, newTab: BottomTab) {

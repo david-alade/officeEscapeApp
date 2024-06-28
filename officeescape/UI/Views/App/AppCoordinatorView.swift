@@ -32,6 +32,12 @@ struct AppCoordinatorView: View {
                     Image(systemName: "brain.filled.head.profile")
                 }
                 .tag(BottomTab.AI)
+            
+            EventsMapView(viewModel: coordinator.mapViewModel)
+                .tabItem {
+                    Image(systemName: "map")
+                }
+                .tag(BottomTab.map)
         }
         .ignoresSafeArea()
     }

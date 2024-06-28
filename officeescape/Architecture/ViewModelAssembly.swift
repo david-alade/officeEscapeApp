@@ -25,6 +25,10 @@ final class ViewModelAssembly: Assembly {
         container.register(IntelligentViewModel.self) { r in
             IntelligentViewModel(eventService: r.resolve(EventServiceProtocol.self)!)
         }.inObjectScope(.weak)
+        
+        container.register(MapViewModel.self) { r in
+            MapViewModel(eventService: r.resolve(EventServiceProtocol.self)!)
+        }.inObjectScope(.weak)
     }
 }
 

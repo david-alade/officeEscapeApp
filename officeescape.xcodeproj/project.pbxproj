@@ -72,6 +72,8 @@
 		6397BAAF2C2E6F4A00F49260 /* EventCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6397BAAE2C2E6F4900F49260 /* EventCard.swift */; };
 		6397BAB12C2E6F4F00F49260 /* EventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6397BAB02C2E6F4D00F49260 /* EventSection.swift */; };
 		6397BAB42C2F355C00F49260 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6397BAB32C2F355C00F49260 /* MarkdownUI */; };
+		6397BAB72C2F416F00F49260 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6397BAB62C2F416D00F49260 /* MapView.swift */; };
+		6397BAB92C2F418B00F49260 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6397BAB82C2F418900F49260 /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +142,8 @@
 		6397BAAC2C2E6F3600F49260 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		6397BAAE2C2E6F4900F49260 /* EventCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCard.swift; sourceTree = "<group>"; };
 		6397BAB02C2E6F4D00F49260 /* EventSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSection.swift; sourceTree = "<group>"; };
+		6397BAB62C2F416D00F49260 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		6397BAB82C2F418900F49260 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		CBF6E3725A20C7D6AF8930CD /* Pods-officeescape.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-officeescape.debug.xcconfig"; path = "Target Support Files/Pods-officeescape/Pods-officeescape.debug.xcconfig"; sourceTree = "<group>"; };
 		D6E3A4D41CBC48187926512D /* Pods_officeescape.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_officeescape.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -351,6 +355,7 @@
 			children = (
 				6397BA1D2C2DFFC800F49260 /* AppCoordinator.swift */,
 				6397BA1E2C2DFFC800F49260 /* AppCoordinatorView.swift */,
+				6397BAB52C2F416600F49260 /* Map */,
 				6397BA8B2C2E1B5400F49260 /* Profile */,
 				6397BA882C2E1B4A00F49260 /* Directory */,
 			);
@@ -412,6 +417,15 @@
 				6397BAAA2C2E2E5C00F49260 /* IntelligentView.swift */,
 			);
 			path = INTELLIGENCE;
+			sourceTree = "<group>";
+		};
+		6397BAB52C2F416600F49260 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				6397BAB82C2F418900F49260 /* MapViewModel.swift */,
+				6397BAB62C2F416D00F49260 /* MapView.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		960FC428AB58758F76DCC3F9 /* Frameworks */ = {
@@ -583,6 +597,7 @@
 				6397BA9D2C2E2A8400F49260 /* EventServiceProtocol.swift in Sources */,
 				6397BA612C2DFFC800F49260 /* EndpointUrl.swift in Sources */,
 				6397BA632C2DFFC800F49260 /* AppRootCoordinator.swift in Sources */,
+				6397BAB72C2F416F00F49260 /* MapView.swift in Sources */,
 				6397BA652C2DFFC800F49260 /* NetworkError.swift in Sources */,
 				6397BA662C2DFFC800F49260 /* ToastViewModifier.swift in Sources */,
 				6397BA692C2DFFC800F49260 /* GlobalConstants.swift in Sources */,
@@ -594,6 +609,7 @@
 				6397BA732C2DFFC800F49260 /* PublisherExtension.swift in Sources */,
 				6397BA752C2DFFC800F49260 /* PhoneNumberFormatter.swift in Sources */,
 				6397BAA12C2E2B4800F49260 /* Event.swift in Sources */,
+				6397BAB92C2F418B00F49260 /* MapViewModel.swift in Sources */,
 				6397BA782C2DFFC800F49260 /* ResponseDecoder.swift in Sources */,
 				6397BA8F2C2E1B6700F49260 /* ProfileView.swift in Sources */,
 				6397BAAB2C2E2E5C00F49260 /* IntelligentView.swift in Sources */,

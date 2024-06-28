@@ -27,7 +27,7 @@ struct EventCoordinatorView: View {
     
     var showingEventsView: some View {
         NavigationStack {
-            VStack {
+            VStack {    
                 ScrollView {
                     EventSection(events: coordinator.hikes, title: "Best hikes ever") { event in
                         openEvent(event: event)
