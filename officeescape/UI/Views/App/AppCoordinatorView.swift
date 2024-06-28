@@ -21,11 +21,11 @@ struct AppCoordinatorView: View {
                 }
                 .tag(BottomTab.homepage)
             
-            ProfileView(viewModel: coordinator.profileViewModel)
+            EventsMapView(viewModel: coordinator.mapViewModel)
                 .tabItem {
-                    Image(systemName: "person.crop.circle")
+                    Image(systemName: "map")
                 }
-                .tag(BottomTab.profile)
+                .tag(BottomTab.map)
             
             IntelligentView(viewModel: coordinator.intelligentViewModel)
                 .tabItem {
@@ -33,11 +33,11 @@ struct AppCoordinatorView: View {
                 }
                 .tag(BottomTab.AI)
             
-            EventsMapView(viewModel: coordinator.mapViewModel)
+            ProfileView(viewModel: coordinator.profileViewModel)
                 .tabItem {
-                    Image(systemName: "map")
+                    Image(systemName: "person.crop.circle")
                 }
-                .tag(BottomTab.map)
+                .tag(BottomTab.profile)
         }
         .ignoresSafeArea()
     }

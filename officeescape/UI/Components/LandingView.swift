@@ -9,7 +9,9 @@ import SwiftUI
 
 struct LandingView: View {
     var body: some View {
-        Text("Landing page!")
+        Image("Logo")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
     }
 }
 
